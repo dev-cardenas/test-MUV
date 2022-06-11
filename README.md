@@ -16,4 +16,7 @@ you can see the documentation in here http://localhost:5001/api/v1/api-docs/
 once you've run the service for a complete guide to what you can do
 
 Observaciones:
-El password lo guarde sin cifrar por una cuestion de tiempo
+Las pondre en espanhol por cuna cuestion de tiempo.
+El password lo guarde sin cifrar por una cuestion de tiempo.
+Los test no consegui desarrollar por una cuestion de tiempo.
+
