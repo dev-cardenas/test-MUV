@@ -73,7 +73,8 @@ export default {
       }
       const { id } = user;
   
-      return res.json({
+      return res.status(httpStatusCodes.OK).json({
+        status: httpStatusCodes.OK,
         user: {
           id
         },

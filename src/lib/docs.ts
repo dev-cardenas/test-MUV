@@ -19,11 +19,30 @@ const swaggerDefinition: OAS3Definition = {
     },
   ],
   components: {
+    securitySchemes: {
+      bearerAuth: {
+        type: "http",
+        scheme: "bearer",
+        bearerFormat: "JWT"
+      }
+    },
     tags: {
       name: "products",
-      description: "Everything about your products"
+      description: "Everything about your products",
     },
     schemas: {
+      user:{
+        type: "object",
+        required: ["email","password"],
+        properties: {
+          email: {
+            type: "string",
+          },
+          password: {
+            type: "string",
+          }
+        },
+      },
       product: {
         type: "object",
         required: ["name","price", "quantity", "code"],
